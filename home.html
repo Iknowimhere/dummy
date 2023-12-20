@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+        }
+        .form_container{
+            margin: 20vh auto 0 auto;
+            width: 300px;
+            background-color: white;
+            border-radius: 5px;
+            display: grid;
+            place-content: center;
+            & h2{
+                text-align: center;
+            }
+        }
+        form{
+            padding: 20px;
+            width: inherit;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_container">
+        <h2>Login</h2>
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
